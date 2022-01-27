@@ -39,7 +39,8 @@ Both `pip2` and `pip3` are available
 #### Building the image
 
 ```bash
-docker build -t ubuntu_pwn_setup -f UbuntuDocker
+docker build -t ubuntu_pwn_setup .
+docker build -t ubuntu_pwn_setup . -f UbuntuDocker
 ```
 
 #### Starting a container
