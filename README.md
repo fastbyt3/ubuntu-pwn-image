@@ -2,15 +2,14 @@
 
 ## Environment
 
-Used `ubuntu:latest` as most of the tools/scripts used in this image don't really change for different ubuntu releases
-
-If you prefer a specific release feel free to change it:
+Using `Ubuntu:20.04` but any ubuntu release should work. To change the release,
 
 ```bash
-FROM ubuntu:latest
-
-# to something like
+# Change line 1
 FROM ubuntu:20.04
+
+# To something like
+FROM ubuntu:21.10
 ```
 
 ## Tools
@@ -40,7 +39,6 @@ Both `pip2` and `pip3` are available
 
 ```bash
 docker build -t ubuntu_pwn_setup .
-docker build -t ubuntu_pwn_setup . -f UbuntuDocker
 ```
 
 #### Starting a container
